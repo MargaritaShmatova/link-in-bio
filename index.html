@@ -1,118 +1,130 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lato Font Example</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <title>Margarita Shmatova's Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
 
-  <title>Margarita Shmatova's links</title>
-
-<style>
-  * {
-    border: thin pink solid;
-  }
-  */
-  html {
-    min-height: 100%
-  }
-  body {
-    min-height: 100%;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      background: (270deg, #f596c5);
-      color: rgb(243, 93, 193)
-      font-family: 'Cabin', sans-serif;
-  }
-  }
-  color: rgba(20, 73, 212, 1.0);
-      text-decoration: none;
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #7b2ff7, #f107a3);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .main-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
     .avatar-image {
-    width: 150px;  /* Set a fixed width */
-    height: 150px; /* Set a fixed height */
-    object-fit: cover; /* Ensures the image is cropped instead of stretched */
-    border-radius: 50%; /* Makes it circular if needed */
-  }
-  
-  .thumbnail {
-    width: 48px;
-    height: 48px;
-    object-fit: cover;
-    border-radius: 48px;
-  }
+      width: 120px;
+      height: 120px;
+      border-radius: 60%;
+      object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, 0.8);
+    }
 
-  .main-container {
-    max-width: 640px;
-    margin: auto;
-  }
+    .name-row {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 15px 0;
+    }
 
-  .item {
-    background-color: rgba(209, 27, 164, 0.377);
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    border-radius: 1000px;
-    padding: 5px;
-    padding-right: 53px;
-    box-shadow: 4px 4px 10px 0px rgba(221, 16, 187, 0.26);
-  }
+    .social-icons-row {
+      font-size: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
 
-  .name-row {
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    font-family: 'Roboto Condensed', sans-serif;
-  }
+    .social-icons-row a {
+      color: white;
+      transition: transform 0.2s;
+    }
 
-  .image-row {
-    margin-bottom: 20px;
-    text-align: center;
-  }
+    .social-icons-row a:hover {
+      transform: scale(1.2);
+    }
 
-  .social-icons-row {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 36px;
-  }
+    .links-row .item {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 30px;
+      padding: 12px;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
 
-  .link-text {
-    text-align: center;
-    flex-grow: 1;
-  }
+    .links-row .item:hover {
+      background: rgba(255, 255, 255, 0.4);
+      transform: scale(1.05);
+    }
+
   </style>
- </head>
+</head>
 
- <body>
+<body>
   <div class="main-container">
     <div class="image-row">
       <img class="avatar-image" src="photo_5460832707211811544_y.jpg" alt="profile pic">
     </div>
-   
+
     <div class="name-row">
       Margarita Shmatova
     </div>
+
     <div class="social-icons-row">
-      Social links go here
+      <a href="https://www.linkedin.com/in/margarita-shmatova/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/margaritashmatova" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/margaritashmatova/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
+    
+
     <div class="links-row">
       <div class="item">
-        First link
+        <a href="https://pitchbook.com/" target="_blank" style="text-decoration: none; color: white;">
+          PitchBook
+        </a>
       </div>
       <div class="item">
-        Second link
+        <a href="https://medium.com/venture-evolved/venture-capital-glossary-7b12ccf728f0" target="_blank" style="text-decoration: none; color: white;">
+          Venture Capital Glossary (Medium)
+        </a>
       </div>
       <div class="item">
-        Third link
+        <a href="https://nvca.org/" target="_blank" style="text-decoration: none; color: white;">
+          NVCA
+        </a>
       </div>
-      <div class="item">
-        Etc
-      </div>
-    </div> <!-- links-row -->
-  </div> <!-- main-container -->
+    </div>
 </body>
-
 </html>
